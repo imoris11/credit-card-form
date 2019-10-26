@@ -1,0 +1,89 @@
+.App {
+  color: #ffffff;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #ffffff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+input {
+  background-color: transparent;
+  border: 0px;
+  transition: border .2s ease;
+  color: #ffffff;
+}
+
+input:focus {
+    outline: none !important;
+   
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../src/assets/images/cardbg.jpeg');
+  height: 200px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2%;
+}
+.card_number {
+  font-size: 25px;
+  width: 70%;
+  font-weight: 500;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.card_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_label{
+  font-size: 10px;
+  font-weight: 600;
+  color:#737079;
+}
+
+.card_holder {
+  font-size: 14px;
+  font-weight: 800;
+}
+.expiry_date {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.cvv{
+  font-weight: 700;
+  font-size: 12px;
+}
+.card_logo {
+  position: relative;
+  right:0;
+}
