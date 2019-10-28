@@ -57,26 +57,34 @@ const Card = (props) => {
       }, []);
 
       props.onChange(card);
+
     return (
         
         <>
-            <div className="card">
+            <div style={ props.cardStyles && props.cardStyles } className="card">
                
-                <input ref={cardNumberRef} onChange={(e) => formatCardNumber(e.target.value)} value={card.cardNumber} name="cardNumber" placeholder="0000 0000 0000 0000" className="card_number" />
+                <input 
+                  style={ props.numberStyles && props.numberStyles } 
+                  ref={cardNumberRef} 
+                  onChange={(e) => formatCardNumber(e.target.value)} 
+                  value={card.cardNumber} 
+                  name="cardNumber" 
+                  placeholder={ props.numberPlaceholder ? props.numberPlaceholder : "0000 0000 0000 0000" }
+                  className="card_number" />
                 
                 <div className='container'>
                 <div className="card_name">
                     <label className="card_label" labelfor="name"> Card Holder
                     </label>
-                    <input ref={cardNameRef} onChange={handleChange} name="cardName" placeholder="John Doe" className="card_holder" />
+                    <input style={ props.nameStyles && props.nameStyles } ref={cardNameRef} onChange={handleChange} name="cardName" placeholder={ props.namePlaceholder ? props.namePlaceholder : "John Doe"} className="card_holder" />
                 </div>
                 <div className="card_info">
                 <label className="card_label" labelfor="name"> VALID THRU
                     </label>
-                    <input maxLength={5} onChange={(e) => fixDate(e.target.value)} value={card.expiryDate} name="expiryDate" placeholder="00/00" className="expiry_date" />
+                    <input style={ props.validityStyles &&  props.validityStyles } maxLength={5} onChange={(e) => fixDate(e.target.value)} value={card.expiryDate} name="expiryDate" placeholder="00/00" className="expiry_date" />
                     <label className="card_label" labelfor="name"> CVV
                     </label>
-                    <input ref={cvvRef} onChange={handleChange} maxLength={3} name="cvv" placeholder="000" className="cvv" />
+                    <input style={ props.cvvStyles &&  props.cvvStyles } ref={cvvRef} onChange={handleChange} maxLength={3} name="cvv" placeholder="000" className="cvv" />
                 </div>
                 <div className='card_logo'>
                 {card.cardType === 'visa' && <img alt="visa logo" style={{width:30, height:30}}  src={require('../../assets/images/visa.png')} /> }

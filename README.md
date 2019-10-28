@@ -4,7 +4,7 @@ A simple credit card form styled as a credit card. While I developed this for a 
 ![](demo.gif)
 
 ### How To Use
-This is not yet on NPM, thus you can just clone the project. 
+This is not yet on NPM, so you can just clone the project. 
 
 Import Card component and pass in an onChange props to listen for form changes.
 
@@ -37,6 +37,24 @@ function App() {
 }
 
 ```
+
+### Accepted Props
+
+Below are the accepted props for the Card component.
+
+| Prop      | Type |  Description | Required | Default Value |
+| ----------- | ------ | ----------- | ------- | ------------ | 
+| onChange    | Function | A callback function to listen for form changes. | True | Not Applicable|
+| cardStyles   | Object | Styles to be applied to the card div. This will override default styles. | False | '' |
+| numberStyles   | Object | Styles to be applied to the card number input element. This will override default styles. | False | '' |
+| nameStyles   | Object | Styles to be applied to the card holder input element. This will override default styles. | False | '' |
+| validityStyles   | Object | Styles to be applied to the expiry date input element. This will override default styles. | False | '' |
+| cvvStyles   | Object | Styles to be applied to the cvv input element. This will override default styles. | False | '' |
+| numberPlaceholder   | String | Placeholder text for card number | False | 'John Doe' |
+| namePlaceholder   | String | Placeholder text for card holder. | False | '0000 0000 0000 0000' |
+
+
+
 
 ## Available Scripts
 
