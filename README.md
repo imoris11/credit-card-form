@@ -50,8 +50,8 @@ Below are the accepted props for the Card component.
 | nameStyles   | Object | Styles to be applied to the card holder input element. This will override default styles. | False | '' |
 | validityStyles   | Object | Styles to be applied to the expiry date input element. This will override default styles. | False | '' |
 | cvvStyles   | Object | Styles to be applied to the cvv input element. This will override default styles. | False | '' |
-| numberPlaceholder   | String | Placeholder text for card number | False | 'John Doe' |
-| namePlaceholder   | String | Placeholder text for card holder. | False | '0000 0000 0000 0000' |
+| numberPlaceholder   | String | Placeholder text for card number | False | '0000 0000 0000 0000' |
+| namePlaceholder   | String | Placeholder text for card holder. | False | 'John Doe' |
 
 
 
