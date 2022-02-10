@@ -50,7 +50,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "file-loader": "^5.0.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
